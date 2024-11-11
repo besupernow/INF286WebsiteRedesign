@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.input {
-  border-radius: 8px;
+.hero{
+    background-image: url('/images/hero.jpg');
 }

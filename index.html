@@ -8,15 +8,70 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
-<nav class="flex flex-row p-10">
-    <div>
-        <a href="index.html">
-            <img src="./src/images/logo.png" alt="logo" class="h-20 w-20">
-        </a>
+<body class="background">
+    <nav class="navbar bg-base-300 sticky top-0 z-50">
+        <div class="navbar-start">
+            <div class="dropdown text-neutral">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral">
+                    <li><a>Book Now</a></li>
+                    <li><a>Gallery</a></li>
+                    <li>
+                        <a>Learn More</a>
+                        <ul class="p-2">
+                            <li><a>Rates</a></li>
+                            <li><a>Safety</a></li>
+                            <li><a>What to Bring</a></li>
+                            <li><a>Directions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="./index.html" class="text-neutral flex flex-row text-left"><img src="./src/images/LightMode.png" height="64px" width="64px"> <p class="place-self-center text-3xl font-bold">Sea Fever Excursions</p></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-neutral" >
+                <li><a>Schedule</a></li>
+                <li><a>Gallery</a></li>
+                <li>
+                    <details >
+                        <summary>Learn More</summary>
+                        <ul class="p-2 bg-base-300" >
+                            <li><a>Rates</a></li>
+                            <li><a>Safety</a></li>
+                            <li><a>What to Bring</a></li>
+                            <li><a>Directions</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary text-neutral">Book Now</a>
+        </div>
+    </nav>
+    <div
+  class="hero min-h-screen"
+  style="background-image: url(./src/images/SailboatHeroImage.jpg);">
+  <div class="hero-overlay bg-gradient-to-b from-base-300/100 via-base-300/70 to-neutral/15"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold text-secondary">Sail the Big Apple</h1>
+      <p class="mb-5 text-neutral">
+        Explore New York’s iconic sights from a private deck, with unforgettable views and personalized service.
+      </p>
+      <button class="btn btn-primary text-neutral">Book a tour</button>
+      <button class="btn btn-secondary btn-ghost text-neutral">Explore our Boats</button>
     </div>
-    <button class="btn btn-america">Book Now</button>
-</nav>
+  </div>
+</div>
 </body>
 
 </html>

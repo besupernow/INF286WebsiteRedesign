@@ -11,12 +11,14 @@ module.exports = {
     themes: [
       {
         sailHudson: {
-          "primary": "#a991f7",
-          "secondary": "#f6d860",
+          "primary": "#6493d9",
+          "secondary": "#fc6a6a",
           "accent": "#37cdbe",
-          "neutral": "#3d4451",
+          "neutral": "#e8efff",
           "base-100": "#ffffff",
-          "america":"#3b82f6",
+          "background":"#0f141f",
+          "base-300":"#121821",
+          "base-200":"#171d26",
         },
       },
     ],

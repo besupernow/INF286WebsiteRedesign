@@ -2,7 +2,8 @@
   "name": "infproject",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx tailwindcss -i ./style/input.css -o ./src/output.css --watch\n"
+    "build": "npx tailwindcss -i ./style/input.css -o ./src/output.css\n",
+    "start": "npx tailwindcss -i ./style/input.css -o ./src/output.css --watch"
   },
   "author": "",
   "license": "ISC",

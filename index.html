@@ -5,13 +5,14 @@
 <head>
     <meta charset="utf-8">
     <title>Sail the Hudson</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/output.css" media="screen">
+    <link rel="stylesheet" href="./src/outputprint.css" media="print">
 </head>
 
 <body class="background">
     <nav class="navbar bg-base-300 sticky top-0 z-50">
         <div class="navbar-start">
-            <div class="dropdown text-neutral">
+            <div class="dropdown text-neutral ">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -20,58 +21,99 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral">
-                    <li><a>Book Now</a></li>
-                    <li><a>Gallery</a></li>
+                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral bg-base-300">
+                    <li><a href="./pages/schedule.html">Schedule</a></li>
+                    <li><a href="./pages/gallery.html">Gallery</a></li>
                     <li>
                         <a>Learn More</a>
                         <ul class="p-2">
-                            <li><a>Rates</a></li>
-                            <li><a>Safety</a></li>
-                            <li><a>What to Bring</a></li>
-                            <li><a>Directions</a></li>
+                            <li><a href="./pages/rates.html">Rates</a></li>
+                            <li><a href="./pages/safety.html">Safety</a></li>
+                            <li><a href="./pages/faq.html">What to Bring</a></li>
+                            <li><a href="./pages/directions.html">Directions</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-            <a href="./index.html" class="text-neutral flex flex-row text-left"><img src="./src/images/LightMode.png" height="64px" width="64px"> <p class="place-self-center text-3xl font-bold">Sea Fever Excursions</p></a>
+            <a href="./index.html" class="text-neutral flex flex-row text-left"><img src="./src/images/LightMode.png"
+                    height="48px" width="48px">
+                <p class="place-self-center text-3xl font-bold pl-5">Sea Fever Excursions</p>
+            </a>
         </div>
         <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-neutral" >
-                <li><a>Schedule</a></li>
-                <li><a>Gallery</a></li>
+            <ul class="menu menu-horizontal px-1 text-neutral text-lg">
+                <li><a href="./pages/schedule.html">Schedule</a></li>
+                <li><a href="./pages/gallery.html">Gallery</a></li>
                 <li>
-                    <details >
+                    <details>
                         <summary>Learn More</summary>
-                        <ul class="p-2 bg-base-300" >
-                            <li><a>Rates</a></li>
-                            <li><a>Safety</a></li>
-                            <li><a>What to Bring</a></li>
-                            <li><a>Directions</a></li>
+                        <ul class="p-2 bg-base-300">
+                            <li><a href="./pages/rates.html">Rates</a></li>
+                            <li><a href="./pages/safety.html">Safety</a></li>
+                            <li><a href="./pages/faq.html">What to Bring</a></li>
+                            <li><a href="./pages/directions.html">Directions</a></li>
                         </ul>
                     </details>
                 </li>
             </ul>
         </div>
         <div class="navbar-end">
-            <a class="btn btn-primary text-neutral">Book Now</a>
+            <a class="btn btn-primary text-neutral" href="./pages/booking.html">Book Now</a>
         </div>
     </nav>
-    <div
-  class="hero min-h-screen"
-  style="background-image: url(./src/images/SailboatHeroImage.jpg);">
-  <div class="hero-overlay bg-gradient-to-b from-base-300/100 via-base-300/70 to-neutral/15"></div>
-  <div class="hero-content text-neutral-content text-center">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold text-secondary">Sail the Big Apple</h1>
-      <p class="mb-5 text-neutral">
-        Explore New York’s iconic sights from a private deck, with unforgettable views and personalized service.
-      </p>
-      <button class="btn btn-primary text-neutral">Book a tour</button>
-      <button class="btn btn-secondary btn-ghost text-neutral">Explore our Boats</button>
+    <div class="hero min-h-screen" style="background-image: url(./src/images/SailboatHeroImage.jpg);">
+        <div class="hero-overlay bg-gradient-to-b from-base-300/100 via-base-300/70 to-neutral/15"></div>
+        <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold text-secondary">Sail the Big Apple</h1>
+                <p class="mb-5 text-neutral">
+                    Explore New York’s iconic sights from a private deck, with unforgettable views and personalized
+                    service.
+                </p>
+                <button class="btn btn-primary text-neutral">Book a tour</button>
+                <button class="btn btn-secondary btn-ghost text-neutral">Explore our Boats</button>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-10 text-neutral">
+        <div class="card bg-base-200">
+            <div class="card-body">
+                <h2 class="card-title">Sail the Hudson</h2>
+                <p>Experience the magic of New York City from the water. Our private sailboat charters offer a unique
+                    opportunity to see the city's iconic sights from a new perspective. Whether you're looking for a
+                    romantic sunset cruise, a family adventure, or a corporate event, we have the perfect boat for you.
+                </p>
+            </div>
+        </div>
+        <div class="card bg-base-200">
+            <div class="card-body">
+                <h2 class="card-title">Unforgettable Views</h2>
+                <p>Our sailboat charters take you past some of New York's most famous landmarks, including the Statue of
+                    Liberty, Ellis Island, and the Brooklyn Bridge. You'll also enjoy stunning views of the city skyline
+                    and the surrounding waterways. It's an experience you'll never forget.</p>
+            </div>
+        </div>
+        <div class="card bg-base-200">
+            <div class="card-body">
+                <h2 class="card-title">Personalized Service</h2>
+                <p>At Sea Fever Excursions, we pride ourselves on providing exceptional service to our guests. Our
+                    experienced captains and crew will ensure that you have a safe and enjoyable sailing experience. We
+                    can accommodate groups of all sizes and can tailor our services to meet your specific needs.</p>
+            </div>
+        </div>
+    </div>
 </body>
+<footer class="footer footer-center bg-base-200 text-neutral p-10">
+    <aside>
+        <img src="./src/images/LightMode.png" alt="Sea Fever Excursions Logo" width="50" height="50" />
+        <p class="font-bold">
+            Sea Fever Excursions, LLC
+            <br />
+            Sailboat Charters since 2002
+        </p>
+        <p>Copyright © to Sea Fever Excursions, LLC</p>
+        <p>Original Website: <a class="link" href="https://www.sailthehudson.com/">https://www.sailthehudson.com/</a></p>
+    </aside>
+</footer>
 
 </html>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    display:none
+}
+img {
+    display:none
+}
+button {
+    display:none
+}

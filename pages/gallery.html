@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sail the Hudson</title>
+    <title>Photo Gallery - Sail the Hudson</title>
     <link rel="stylesheet" href="../src/output.css" media="screen">
     <link rel="stylesheet" href="../src/outputprint.css" media="print">
 </head>
@@ -21,11 +21,11 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral">
+                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral bg-base-300">
                     <li><a href="./schedule.html">Schedule</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li>
-                        <a>Learn More</a>
+                        <p>Learn More</p>
                         <ul class="p-2">
                             <li><a href="./rates.html">Rates</a></li>
                             <li><a href="./safety.html">Safety</a></li>
@@ -58,6 +58,18 @@
             <a class="btn btn-primary text-neutral" href="./booking.html">Book Now</a>
         </div>
     </nav>
+     <section class="py-12 bg-base-300 text-neutral">
+         <div class="container mx-auto">
+             <h1 class="text-5xl font-bold text-center text-secondary mb-12">Photo Gallery</h1>
+             <div id="gallery" class="gallery grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+
+             </div>
+         </div>
+     </section>
+     <div id="lightbox" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+         <img id="lightbox-img" src="" alt="Large view" class="max-w-full max-h-full rounded-lg shadow-lg">
+         <button id="lightbox-close" class="absolute top-4 right-4 text-white text-2xl font-bold">&times;</button>
+     </div>
 </body>
 <footer class="footer footer-center bg-base-200 text-neutral p-10">
     <aside>
@@ -70,4 +82,52 @@
       <p>Copyright © to Sea Fever Excursions, LLC</p>
     </aside>
   </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const galleryFolder = "../src/images/gallery/";
+        const gallery = document.getElementById("gallery");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const lightboxClose = document.getElementById("lightbox-close");
+
+        // Array of example images (in practice, dynamically fetch file names from the server)
+        const images = [
+            "bobT.jpg",
+            "Cedric 9.jpg",
+            "CharteyAshley.jpg",
+            "Dara_adn_Phil_close.jpg",
+            "photos2.jpg",
+            "Pierre.jpg",
+            "Sandy11.jpg",
+            "SeaFever.jpg",
+            "StatueofLibertyShearwater.jpg"
+        ];
+
+        // Create image elements
+        images.forEach((image) => {
+            const div = document.createElement("div");
+            div.className = "gallery-item";
+            const img = document.createElement("img");
+            img.src = galleryFolder + image;
+            img.alt = "Gallery Image";
+            img.addEventListener("click", () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.remove("hidden");
+            });
+            div.appendChild(img);
+            gallery.appendChild(div);
+        });
+
+        document.addEventListener("click", (event) => {
+            if (event.target === lightbox && lightbox.classList.contains("hidden") === false) {
+                lightbox.classList.add("hidden");
+            }
+        });
+
+        lightboxClose.addEventListener("click", () => {
+            lightbox.classList.add("hidden");
+        });
+    });
+
+</script>
 </html>

@@ -21,11 +21,11 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral">
+                    class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-neutral bg-base-300">
                     <li><a href="./schedule.html">Schedule</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li>
-                        <a>Learn More</a>
+                        <p>Learn More</p>
                         <ul class="p-2">
                             <li><a href="./rates.html">Rates</a></li>
                             <li><a href="./safety.html">Safety</a></li>
@@ -58,6 +58,136 @@
             <a class="btn btn-primary text-neutral" href="./booking.html">Book Now</a>
         </div>
     </nav>
+     <section class="py-12 bg-base-300 text-neutral">
+         <div class="container mx-auto space-y-12">
+             <!-- About the Company -->
+             <div>
+                 <h1 class="text-5xl font-bold text-center text-secondary mb-8">About Us</h1>
+                 <p class="text-lg text-center">
+                     Sea Fever Excursions was founded in 2002 with a vision to share the beauty of New York Harbor and the
+                     thrill of sailing with everyone. From romantic getaways to corporate outings, we pride ourselves on
+                     providing memorable experiences, stunning views, and personalized service. Join us and explore the
+                     magic of the Hudson River and beyond.
+                 </p>
+             </div>
+
+             <!-- Our Mission and Values -->
+             <div>
+                 <h2 class="text-3xl font-bold mb-4">Our Mission & Values</h2>
+                 <p>
+                     At Sea Fever Excursions, we aim to create unforgettable sailing experiences while prioritizing safety
+                     and environmental stewardship. Our values include:
+                 </p>
+                 <ul class="list-disc ml-8 mt-4 space-y-2">
+                     <li><strong>Safety:</strong> All boats meet US Coast Guard Auxiliary safety standards.</li>
+                     <li><strong>Adventure:</strong> Experience New York City like never before.</li>
+                     <li><strong>Community:</strong> Build lasting memories with friends and family.</li>
+                 </ul>
+             </div>
+
+             <!-- List of Boats -->
+             <div>
+                 <h2 class="text-3xl font-bold mb-4" id="Fleet">Our Fleet</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <!-- Sea Fever Boat -->
+                     <div class="card bg-base-200 shadow-lg">
+                         <figure>
+                             <img src="../src/images/seaanchor.jpg" alt="Sea Fever Boat" class="w-full h-64 object-cover">
+                         </figure>
+                         <div class="card-body">
+                             <h3 class="card-title text-2xl">Sea Fever</h3>
+                             <p>
+                                 The Sea Fever is a Catalina Yacht 30, renowned for its solid build and comfortable design. It's the
+                                 most successful USA-built sailboat ever produced, offering smooth sailing and stunning views.
+                             </p>
+                         </div>
+                     </div>
+                     <div class="card bg-base-200 shadow-lg">
+                         <div class="card-body flex items-center justify-center">
+                             <h3 class="text-2xl font-bold text-gray-500">More Boats Coming Soon!</h3>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <!-- Sea Fever Sailing Club -->
+             <div>
+                 <h2 class="text-3xl font-bold mb-4">Sea Fever Sailing Club</h2>
+                 <p class="text-lg mb-6">
+                     Love sailing? Join the Sea Fever Sailing Club for an affordable, hands-on experience without the cost of owning a boat.
+                     Whether you're new to sailing or an experienced sailor looking to brush up your skills, our club offers an adventurous
+                     and welcoming environment.
+                 </p>
+
+                 <!-- Features -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div class="card bg-base-200 p-6 shadow-lg">
+                         <h3 class="text-2xl font-bold mb-2">What’s Included</h3>
+                         <ul class="list-disc ml-6 mt-4 space-y-2">
+                             <li>10 three-hour sessions for seasonal groups or 20 for the yearly group.</li>
+                             <li>Learn in all types of wind, currents, and weather conditions.</li>
+                             <li>Hands-on sailing experience with one of our captains.</li>
+                             <li>Groups limited to 4 people per boat for personalized attention.</li>
+                             <li>Log time on the water for future certifications (no formal certification provided).</li>
+                         </ul>
+                     </div>
+                     <div class="card bg-base-200 p-6 shadow-lg">
+                         <h3 class="text-2xl font-bold mb-2">Why Join?</h3>
+                         <ul class="list-disc ml-6 mt-4 space-y-2">
+                             <li>Meet new people who share your passion for sailing.</li>
+                             <li>Sail in the beautiful New York Harbor every Saturday or Sunday at 10 AM.</li>
+                             <li>Exclusive access to different types of keel sailboats to enhance your skills.</li>
+                             <li>Bad weather sessions are rescheduled, ensuring you get the full experience.</li>
+                             <li>25% discount on charter sails for members and their guests.</li>
+                         </ul>
+                     </div>
+                 </div>
+
+                 <!-- Pricing Table -->
+                 <div class="mt-8">
+                     <h3 class="text-2xl font-bold mb-4">Membership Pricing</h3>
+                     <div class="overflow-x-auto">
+                         <table class="table-auto w-full border-collapse rounded-lg overflow-hidden bg-base-200 shadow-lg">
+                             <thead>
+                             <tr class="bg-primary text-neutral">
+                                 <th class="px-4 py-3 text-left">Group</th>
+                                 <th class="px-4 py-3 text-left">Price Per Person</th>
+                                 <th class="px-4 py-3 text-left">Price Per Couple</th>
+                             </tr>
+                             </thead>
+                             <tbody>
+                             <tr class="border-t border-base-300">
+                                 <td class="px-4 py-3">Fall Lite Group</td>
+                                 <td class="px-4 py-3">$379.00</td>
+                                 <td class="px-4 py-3">$720.00</td>
+                             </tr>
+                             <tr class="border-t border-base-300">
+                                 <td class="px-4 py-3">Spring/Summer Group</td>
+                                 <td class="px-4 py-3">$699.00</td>
+                                 <td class="px-4 py-3">$1298.00</td>
+                             </tr>
+                             <tr class="border-t border-base-300">
+                                 <td class="px-4 py-3">Yearly Club (Spring to Fall)</td>
+                                 <td class="px-4 py-3">$1298.00</td>
+                                 <td class="px-4 py-3">$2596.00</td>
+                             </tr>
+                             </tbody>
+                         </table>
+                     </div>
+                 </div>
+
+                 <!-- Call to Action -->
+                 <div class="mt-8 bg-secondary p-6 rounded-lg shadow-lg text-neutral">
+                     <h3 class="text-xl font-bold mb-4">Ready to Join?</h3>
+                     <p>
+                         Membership is payable in full by cash or check. No refunds or prorated refunds are allowed.
+                         Join now to start your sailing adventure and enjoy the perks of being part of our exclusive club!
+                     </p>
+                     <a href="mailto:info@sailthehudson.com" class="btn btn-primary mt-4 text-neutral">Join Now</a>
+                 </div>
+             </div>
+         </div>
+     </section>
 </body>
 <footer class="footer footer-center bg-base-200 text-neutral p-10">
     <aside>
